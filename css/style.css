@@ -1,0 +1,32 @@
+body {
+margin: 0;
+background: #B8B8B8;
+font-family: Tahoma;
+}
+.form_about {
+margin: 0 auto;
+background: #fff;
+padding: 20px;
+width: 240px;
+}
+.p_con {
+margin: 0;
+text-align: center;
+font-weight: 400;
+color: #fff;
+text-transform: uppercase;
+}
+.contact-container {
+width: 235px;
+float: left;
+margin:10px;
+border: 1px solid #fff;
+padding: 20px;
+}
+.clearfix:after {
+visibility: hidden;
+display: block;
+content: "";
+clear: both;
+height: 0;
+}

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>backbone.js</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1 class="p_con">Приложение контактов</h1>
+	<div class="form_about">
+		<input type="text" class="name1" placeholder="Имя*">
+		<select name="choise" class="choise">
+			<option value="Семья">Семья</option>
+			<option value="Друзья">Друзья</option>
+			<option value="Коллеги">Коллеги</option>
+		</select><br/>
+		<input type="text" class="adress" placeholder="Адресс"><br/>
+		<input type="text" class="telephone" placeholder="Телефон"><br/>
+		<input type="text" class="mail_to" placeholder="E-mail"><br/>
+		
+		<input type="submit" class="button_go" onclick="myFunction()" disabled="disabled" value="Добавить">
+	</div>
+	
+	<div class="clearfix"></div>
+	<hr/>
+	
+	<div id="contacts"></div>
+	
+	<script id="contactTemplate" type="text/template">
+		<img src="<%= photo %>" alt="<%= name %>" />
+		<h1><%= name %><span><br/><%= type %></span></h1>
+		<div>Адресс: <%= address %></div>
+		<ul>
+			<li>Тел: <%= tel %></li>
+			<li>E-mail: <a href="mailto:<%= email %>"><%= email %></a></li>
+		</ul>
+	</script>
+	
+	
+
+	
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/underscore.js"></script>
+	<script src="js/backbone.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>
